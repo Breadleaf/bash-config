@@ -1,0 +1,31 @@
+######################################################
+
+# Alias
+
+######################################################
+
+# ls
+alias la='ls -A'
+alias ls='ls --color=auto'
+alias lss='ls -Ash1'
+alias lsss='ls -lASh'
+
+
+# git
+alias g="git"
+alias gc="git clone "
+alias ga="git add --all"
+alias gcm="git commit -m "
+alias gp="git push"
+
+
+# .bashrc
+alias srcb='source ~/.bashrc'
+alias edb="vim ~/.bashrc"
+
+
+# General
+alias vi="vim"
+alias v="vim"
+alias cls="clear"
+alias py="python3"
