@@ -52,8 +52,15 @@ export HISTCONTROL=erasedups:ignorespace
 # remove all alias
 unalias -a
 
+# .bashrc
+alias srcb="source ~/.bashrc"
+alias edb="vim ~/.bashrc"
+
 # source all alias
 source ~/.bash_alias
+source ~/.bash_functions
+source ~/.bash_custom
+source ~/.bash_ssh
 
 ######################################################
 

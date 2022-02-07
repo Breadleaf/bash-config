@@ -4,12 +4,13 @@
 
 ######################################################
 
-# ls
-alias la='ls -A'
-alias ls='ls --color=auto'
-alias lss='ls -Ash1'
-alias lsss='ls -lASh'
+alias edba="vim ~/.bash_alias"
 
+# ls
+alias sl="ls --color=auto"
+alias ls='ls --color=auto'
+alias la='ls -A --color=auto'
+alias las='ls -lASh --color=auto'
 
 # git
 alias g="git"
@@ -17,15 +18,17 @@ alias gc="git clone "
 alias ga="git add --all"
 alias gcm="git commit -m "
 alias gp="git push"
-
-
-# .bashrc
-alias srcb='source ~/.bashrc'
-alias edb="vim ~/.bashrc"
-
+alias gpu="git pull"
 
 # General
 alias vi="vim"
 alias v="vim"
 alias cls="clear"
 alias py="python3"
+alias cp="cp -i"
+alias rm="rm -i"
+
+# Movement
+alias ..="cd .."
+alias 2.="cd ../.."
+alias 3.="cd ../../.."
