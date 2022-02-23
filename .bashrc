@@ -12,6 +12,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# For some reason this wasn't enabled by default
+shopt -s extglob
 
 # Set the colors in the tty
 if [ "$TERM" = "linux" ]; then
@@ -59,8 +61,8 @@ alias edb="vim ~/.bashrc"
 # source all alias
 source ~/.bash_alias
 source ~/.bash_functions
-source ~/.bash_custom
-source ~/.bash_ssh
+#source ~/.bash_custom
+#source ~/.bash_ssh
 
 ######################################################
 

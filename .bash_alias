@@ -32,3 +32,6 @@ alias rm="rm -i"
 alias ..="cd .."
 alias 2.="cd ../.."
 alias 3.="cd ../../.."
+
+# Weather
+alias weather="clear; curl -s wttr.in > ~/.weather_temp_file; sed -i '/Follow/d' ~/.weather_temp_file; echo; cat ~/.weather_temp_file"

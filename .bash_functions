@@ -8,7 +8,7 @@ alias edbf="vim ~/.bash_functions"
 
 ve ()
 {
-	help="Command Syntax:\nve -flag <file-name>\nve -p : python3\nve -c : cpp"
+	help="Command Syntax:\nve -flag <file-name>\nve -p : python3\nve --cpp : cpp\nve -c : c"
 
 	case $1 in
 		"-h")
@@ -17,8 +17,11 @@ ve ()
 		"-p")
 			clear && vim $2 && python3 $2
 			;;
-		"-c")
+		"--cpp")
 			clear && vim $2 && g++ $2 && ./a.out
+			;;
+		"-c")
+			clear && vim $2 && gcc $2 && ./a.out
 			;;
 		*)
 			echo -e $help
